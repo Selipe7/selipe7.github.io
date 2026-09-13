@@ -1,10 +1,12 @@
 <div class="hero" markdown>
 
-# Technical Knowledge Base
+# Berto Brain
+
+Technical Knowledge Base
 
 **Build it. Break it. Fix it. Document it.**
 
-A living collection of labs, walkthroughs, troubleshooting notes, security concepts, and lessons learned.
+A collection of IT, cybersecurity, networking, infrastructure, CCDC, homelab, and ICSOT documentation.
 
 </div>
 

@@ -1,5 +1,5 @@
-site_name: Humberto's Technical Knowledge Base
-site_description: Notes, labs, walkthroughs, troubleshooting, and security documentation.
+site_name: Cyber B3rto
+site_description: IT, cybersecurity, networking, infrastructure, CCDC, homelab, and ICSOT documentation.
 # Set this after you know your final repository URL:
 # site_url: https://USERNAME.github.io/REPOSITORY/
 
@@ -52,6 +52,9 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 extra_css:
   - stylesheets/extra.css
