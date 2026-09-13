@@ -1,0 +1,82 @@
+site_name: Humberto's Technical Knowledge Base
+site_description: Notes, labs, walkthroughs, troubleshooting, and security documentation.
+# Set this after you know your final repository URL:
+# site_url: https://USERNAME.github.io/REPOSITORY/
+
+# Optional GitHub links:
+# repo_url: https://github.com/USERNAME/REPOSITORY
+# repo_name: USERNAME/REPOSITORY
+# edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: en
+  palette:
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: teal
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: black
+      accent: teal
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+    - content.action.edit
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+  - Home: index.md
+  - Windows:
+      - Overview: windows/index.md
+  - Linux:
+      - Overview: linux/index.md
+  - Networking:
+      - Overview: networking/index.md
+  - Security:
+      - Overview: security/index.md
+  - CCDC:
+      - Overview: ccdc/index.md
+  - ICS / OT:
+      - Overview: ics-ot/index.md
+  - Homelab:
+      - Overview: homelab/index.md
+  - Scripting:
+      - Overview: scripting/index.md
+  - Troubleshooting:
+      - Overview: troubleshooting/index.md
+  - Certifications:
+      - Overview: certifications/index.md
+  - Templates:
+      - Lab Write-up: templates/lab-writeup-template.md
