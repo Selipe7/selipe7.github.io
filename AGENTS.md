@@ -28,7 +28,7 @@ For lab/walkthrough pages, prefer:
 8. What I learned
 9. References
 
-Use `docs/templates/lab-writeup-template.md` as the default template.
+Use `docs/resources/lab-writeup-template.md` as the default template.
 
 ## Site maintenance
 

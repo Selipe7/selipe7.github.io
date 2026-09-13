@@ -16,7 +16,7 @@ A living collection of labs, walkthroughs, troubleshooting notes, security conce
 
     AD DS, DNS, Group Policy, Windows Server administration, identity, and hardening.
 
-    [:octicons-arrow-right-24: Open Windows notes](windows/)
+    [:octicons-arrow-right-24: Open Windows notes](windows/index.md)
 
 -   :material-linux: **Linux**
 
@@ -24,7 +24,7 @@ A living collection of labs, walkthroughs, troubleshooting notes, security conce
 
     Administration, services, permissions, hardening, package management, and troubleshooting.
 
-    [:octicons-arrow-right-24: Open Linux notes](linux/)
+    [:octicons-arrow-right-24: Open Linux notes](linux/index.md)
 
 -   :material-lan: **Networking**
 
@@ -32,7 +32,7 @@ A living collection of labs, walkthroughs, troubleshooting notes, security conce
 
     TCP/IP, VLANs, routing, switching, DNS, DHCP, packet analysis, and network troubleshooting.
 
-    [:octicons-arrow-right-24: Open Networking notes](networking/)
+    [:octicons-arrow-right-24: Open Networking notes](networking/index.md)
 
 -   :material-shield-lock: **Security**
 
@@ -40,7 +40,7 @@ A living collection of labs, walkthroughs, troubleshooting notes, security conce
 
     Detection, incident response, SIEM, vulnerability management, hardening, and blue-team notes.
 
-    [:octicons-arrow-right-24: Open Security notes](security/)
+    [:octicons-arrow-right-24: Open Security notes](security/index.md)
 
 -   :material-flag-checkered: **CCDC**
 
@@ -48,7 +48,7 @@ A living collection of labs, walkthroughs, troubleshooting notes, security conce
 
     Competition preparation, service validation, documentation patterns, defensive operations, and lessons learned.
 
-    [:octicons-arrow-right-24: Open CCDC notes](ccdc/)
+    [:octicons-arrow-right-24: Open CCDC notes](ccdc/index.md)
 
 -   :material-factory: **ICS / OT**
 
@@ -56,7 +56,7 @@ A living collection of labs, walkthroughs, troubleshooting notes, security conce
 
     Industrial control systems, OT architecture, protocols, safety, segmentation, and security.
 
-    [:octicons-arrow-right-24: Open ICS / OT notes](ics-ot/)
+    [:octicons-arrow-right-24: Open ICS / OT notes](ics-ot/index.md)
 
 -   :material-server-network: **Homelab**
 
@@ -64,7 +64,7 @@ A living collection of labs, walkthroughs, troubleshooting notes, security conce
 
     Virtualization, firewalls, test networks, self-hosted services, and infrastructure experiments.
 
-    [:octicons-arrow-right-24: Open Homelab notes](homelab/)
+    [:octicons-arrow-right-24: Open Homelab notes](homelab/index.md)
 
 -   :material-code-braces: **Scripting**
 
@@ -72,7 +72,7 @@ A living collection of labs, walkthroughs, troubleshooting notes, security conce
 
     PowerShell, Bash, Python, automation snippets, and administrative helpers.
 
-    [:octicons-arrow-right-24: Open Scripting notes](scripting/)
+    [:octicons-arrow-right-24: Open Scripting notes](scripting/index.md)
 
 -   :material-tools: **Troubleshooting**
 
@@ -80,7 +80,7 @@ A living collection of labs, walkthroughs, troubleshooting notes, security conce
 
     Symptom → diagnosis → fix write-ups for problems worth remembering.
 
-    [:octicons-arrow-right-24: Open Troubleshooting notes](troubleshooting/)
+    [:octicons-arrow-right-24: Open Troubleshooting notes](troubleshooting/index.md)
 
 -   :material-certificate: **Certifications**
 
@@ -88,7 +88,7 @@ A living collection of labs, walkthroughs, troubleshooting notes, security conce
 
     Study notes, command references, lab exercises, and exam-topic summaries.
 
-    [:octicons-arrow-right-24: Open Certification notes](certifications/)
+    [:octicons-arrow-right-24: Open Certification notes](certifications/index.md)
 
 </div>
 

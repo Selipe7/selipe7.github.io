@@ -78,5 +78,5 @@ nav:
       - Overview: troubleshooting/index.md
   - Certifications:
       - Overview: certifications/index.md
-  - Templates:
-      - Lab Write-up: templates/lab-writeup-template.md
+  - Resources:
+      - Lab Write-up: resources/lab-writeup-template.md
