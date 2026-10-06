@@ -75,6 +75,7 @@ nav:
       - Overview: ics-ot/index.md
   - Homelab:
       - Overview: homelab/index.md
+      - Proxmox VE and pfSense Security Hardening: homelab/proxmox-pfsense-security-hardening.md
   - Scripting:
       - Overview: scripting/index.md
   - Troubleshooting:
