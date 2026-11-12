@@ -76,6 +76,8 @@ nav:
   - Homelab:
       - Overview: homelab/index.md
       - Proxmox VE and pfSense Security Hardening: homelab/proxmox-pfsense-security-hardening.md
+  - Labs:
+      - "Lab 01: pfSense Firewall Investigation": labs/lab01-pfsense-firewall/index.md
   - Scripting:
       - Overview: scripting/index.md
   - Troubleshooting:
