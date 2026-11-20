@@ -49,13 +49,13 @@ Open the printer's Web Config page at `http://<printer-ip>` and go to **Network 
 | Secure Connection | SSL/TLS |
 | Certificate Validation | Enable |
 
-![Epson email server settings with account and password redacted](img/epson-email-server-settings.png)
+![Epson email server settings with account and password redacted](../assets/images/homelab/epson-scan-to-email/epson-email-server-settings.png)
 
 ### 3. Verify
 
 Go to **Network Settings > Email Server > Connection Test**. A successful result confirms DNS resolution, TLS negotiation and authentication all work.
 
-![Epson connection test successful](img/epson-connection-test.png)
+![Epson connection test successful](../assets/images/homelab/epson-scan-to-email/epson-connection-test.png)
 
 A test scan to email was then completed successfully.
 

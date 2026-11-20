@@ -10,6 +10,7 @@ site_description: IT, cybersecurity, networking, infrastructure, CCDC, homelab, 
 
 theme:
   name: material
+  custom_dir: overrides
   language: en
   palette:
     - media: "(prefers-color-scheme: dark)"
@@ -67,8 +68,6 @@ nav:
       - Overview: linux/index.md
   - Networking:
       - Overview: networking/index.md
-  - Printers:
-      - Epson Scan-to-Email with Gmail: printers/epson-scan-to-email-gmail.md
   - Security:
       - Overview: security/index.md
   - CCDC:
@@ -78,8 +77,8 @@ nav:
   - Homelab:
       - Overview: homelab/index.md
       - Proxmox VE and pfSense Security Hardening: homelab/proxmox-pfsense-security-hardening.md
-  - Labs:
-      - "Lab 01: pfSense Firewall Investigation": labs/lab01-pfsense-firewall/index.md
+      - "Lab 01: pfSense Firewall Investigation": homelab/lab01-pfsense-firewall.md
+      - Epson Scan-to-Email with Gmail: homelab/epson-scan-to-email-gmail.md
   - Scripting:
       - Overview: scripting/index.md
   - Troubleshooting:

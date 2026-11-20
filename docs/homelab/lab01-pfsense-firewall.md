@@ -29,11 +29,11 @@ Reproduce a single client DNS failure caused by a firewall rule. Prove that rule
 
 Before any change, the query succeeded at 15:08:09.
 
-![Baseline nslookup to 1.1.1.1 succeeds](images/01-baseline-success.png)
+![Baseline nslookup to 1.1.1.1 succeeds](../assets/images/homelab/lab01-pfsense-firewall/01-baseline-success.png)
 
 The LAN ruleset before the change: Anti-Lockout plus the two default allow rules.
 
-![LAN rules before the change](images/02-lan-rules-before.png)
+![LAN rules before the change](../assets/images/homelab/lab01-pfsense-firewall/02-lan-rules-before.png)
 
 ## 2. Temporary block rule
 
@@ -57,21 +57,21 @@ The first test after creating the rule **still succeeded** at 15:11:36. Instead 
 
 I narrowed the destination to `1.1.1.1` and corrected the description to the `LAB01_TEMP_` naming convention. The screenshot below shows the destination fix and the Tracking ID `1794517882`, captured just before that description change. I then applied the change.
 
-![Rule edit page showing destination and Tracking ID](images/03-rule-edit-tracking-id.png)
+![Rule edit page showing destination and Tracking ID](../assets/images/homelab/lab01-pfsense-firewall/03-rule-edit-tracking-id.png)
 
-![LAN rules with the LAB01 rule applied in the correct position](images/04-lan-rules-rule-applied.png)
+![LAN rules with the LAB01 rule applied in the correct position](../assets/images/homelab/lab01-pfsense-firewall/04-lan-rules-rule-applied.png)
 
 ## 3. Reproduce the failure
 
 With the rule active, the query timed out at 15:14:33 and again at 15:15:15. A timeout is what you expect from a Block action: the packet is dropped without any reply, so the client retries until it gives up.
 
-![nslookup times out with the rule active](images/05-query-timed-out.png)
+![nslookup times out with the rule active](../assets/images/homelab/lab01-pfsense-firewall/05-query-timed-out.png)
 
 ## 4. Correlate with firewall logs
 
 The unfiltered log was full of WAN noise (SSDP multicast and bogon IPv6 from the home network), which pushed the test entries out of the 500-entry view. A targeted filter (source `TEST_CLIENT`, destination `1.1.1.1`, port `53`) returned **6 matched entries**.
 
-![Filtered firewall log: 6 blocks by the LAB01 rule](images/06-firewall-log-filtered.png)
+![Filtered firewall log: 6 blocks by the LAB01 rule](../assets/images/homelab/lab01-pfsense-firewall/06-firewall-log-filtered.png)
 
 | Time | Action | Interface | Proto | Source | Destination | Rule (Tracker ID) |
 |---|---|---|---|---|---|---|
@@ -93,15 +93,15 @@ The unfiltered log was full of WAN noise (SSDP multicast and bogon IPv6 from the
 
 I deleted only the LAB01 rule and applied the change. The ruleset matches the baseline again.
 
-![LAN rules after rollback match the baseline](images/07-lan-rules-after-rollback.png)
+![LAN rules after rollback match the baseline](../assets/images/homelab/lab01-pfsense-firewall/07-lan-rules-after-rollback.png)
 
 DNS to 1.1.1.1 worked again at 15:20:08.
 
-![nslookup succeeds after rollback](images/08-query-restored.png)
+![nslookup succeeds after rollback](../assets/images/homelab/lab01-pfsense-firewall/08-query-restored.png)
 
 Re-running the same log filter showed the same 6 entries (the last at 15:15:27) and **no new blocks after recovery**. Because the rule had been deleted, the log now shows only the tracker ID and no longer shows the rule description. That's a good reason to record tracker IDs during an investigation.
 
-![Filtered log after rollback: no new blocks](images/09-log-post-rollback.png)
+![Filtered log after rollback: no new blocks](../assets/images/homelab/lab01-pfsense-firewall/09-log-post-rollback.png)
 
 ## Timeline (CST)
 
