@@ -1,12 +1,10 @@
 site_name: Cyber B3rto
 site_description: IT, cybersecurity, networking, infrastructure, CCDC, homelab, and ICSOT documentation.
-# Set this after you know your final repository URL:
-# site_url: https://USERNAME.github.io/REPOSITORY/
+site_url: https://selipe7.github.io/
 
-# Optional GitHub links:
-# repo_url: https://github.com/USERNAME/REPOSITORY
-# repo_name: USERNAME/REPOSITORY
-# edit_uri: edit/main/docs/
+repo_url: https://github.com/Selipe7/selipe7.github.io
+repo_name: Selipe7/selipe7.github.io
+edit_uri: edit/main/docs/
 
 theme:
   name: material
@@ -62,6 +60,7 @@ extra_css:
 
 nav:
   - Home: index.md
+  - About: about.md
   - Windows:
       - Overview: windows/index.md
       - AD Firewall Hardening: windows/active-directory-firewall-hardening.md
@@ -71,8 +70,12 @@ nav:
       - Overview: networking/index.md
   - Security:
       - Overview: security/index.md
+      - Phishing Alert Investigation: security/phishing-alert-investigation.md
+      - DNS Tunneling Packet Analysis: security/dns-tunneling-analysis.md
+      - Azure IAM Drift Investigation: security/azure-iam-drift-investigation.md
   - CCDC:
       - Overview: ccdc/index.md
+      - Tooling Reference: ccdc/tooling.md
   - ICS / OT:
       - Overview: ics-ot/index.md
   - Homelab:
@@ -82,6 +85,8 @@ nav:
       - Epson Scan-to-Email with Gmail: homelab/epson-scan-to-email-gmail.md
   - Scripting:
       - Overview: scripting/index.md
+      - AD Password Reset Script: scripting/ad-password-reset.md
+      - Small Security Helper Scripts: scripting/helper-scripts.md
   - Troubleshooting:
       - Overview: troubleshooting/index.md
   - Certifications:
