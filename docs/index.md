@@ -6,7 +6,9 @@ Technical Knowledge Base
 
 **Build it. Break it. Fix it. Document it.**
 
-A collection of IT, cybersecurity, networking, infrastructure, CCDC, homelab, and ICSOT documentation.
+A collection of IT, cybersecurity, networking, infrastructure, CCDC, homelab, and ICS/OT documentation.
+
+[:material-account: About me](about.md){ .md-button } [:material-certificate: Certifications](certifications/index.md){ .md-button }
 
 </div>
 

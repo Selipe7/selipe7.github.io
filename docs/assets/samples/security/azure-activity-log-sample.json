@@ -1,0 +1,12 @@
+{
+  "records": [
+    {
+      "time": "2025-06-01T10:22:18Z",
+      "operationName": "Add role assignment",
+      "user": "alex.w",
+      "role": "Contributor",
+      "scope": "/subscriptions/xxx/resourceGroups/prod-rg",
+      "status": "Success"
+    }
+  ]
+}
